@@ -67,6 +67,7 @@ private:
     */
    typedef boost::shared_ptr<utility_iterators::utility_iterator_base<int> > 
       internal_succ_itor_ptr;
+   typedef unsigned char byte;
 
    /** Scratch variables used by the {@link #diffComp(OutputBitStream, int, int, int[],
     * int, int[], int, boolean)} method. */
@@ -306,10 +307,10 @@ protected:
              outdegree_cache_start(INT_MAX),
              outdegree_cache_end(INT_MAX),
              offset_cache_end(INT_MAX) {
-#ifndef CONFIG_FAST
+//#ifndef CONFIG_FAST
       // doesn't really need to do anything except register a logger.
-      logs::register_logger( "webgraph", logs::LEVEL_MAX );
-#endif
+//      logs::register_logger( "webgraph", logs::LEVEL_MAX );
+//#endif
    }
         
 public:

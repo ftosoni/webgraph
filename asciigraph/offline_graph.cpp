@@ -51,6 +51,7 @@ offline_graph offline_graph::load( const string& basename ) {
    result.filename = basename + ".graph-txt";
   
    ifstream file( result.filename.c_str() );
+   assert(file.is_open());
   
    string nextline;
         
@@ -60,7 +61,7 @@ offline_graph offline_graph::load( const string& basename ) {
    istringstream nl( nextline );
         
    nl >> result.n;
-        
+
    assert( result.n > 0 );
                 
 

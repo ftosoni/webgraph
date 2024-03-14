@@ -91,9 +91,9 @@ private:
       no_buffer = true;
       temp_buffer.resize( TEMP_BUFFER_SIZE );
 
-#ifndef CONFIG_FAST
-      logs::register_logger( "obs", logs::LEVEL_NONE );
-#endif
+//#ifndef CONFIG_FAST
+//      logs::register_logger( "obs", logs::LEVEL_NONE );
+//#endif
    }
    
 

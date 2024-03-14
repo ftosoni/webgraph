@@ -75,9 +75,9 @@ public:
       this->n = 0;
       this->end_marker = true;
 
-#ifndef CONFIG_FAST
-      logs::register_logger( "iterators", logs::LEVEL_MAX );
-#endif
+//#ifndef CONFIG_FAST
+//      logs::register_logger( "iterators", logs::LEVEL_MAX );
+//#endif
    }
 
    ////////////////////////////////////////////////////////////////////////////////
